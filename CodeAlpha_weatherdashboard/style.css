@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    background-image: url('bgimg.jpg');
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.container{
+    position: relative;
+    width: 300px;
+    height: min-content;
+    background-color: white;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+.search-box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.search-box input{
+    width: 90%;
+    font-size: 15px;
+    text-transform: capitalize;
+    background-color: lightblue;
+    padding: 3px;
+    border-radius: 9px;
+}
+.search-box input::placeholder{
+    color: black;
+}
+
+.search-box button{
+    width: 24px;
+    height: 23px;
+    background-color: rgb(183, 217, 228);
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+
+.search-box button:hover{
+    color: white;
+    background-color: grey;
+
+}
+
+.weather-body{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-block: 10px;
+}
+.weather-body img{
+    width: 70%;
+}
+
+.weather-box{
+    margin-block: 5px;
+    text-align: center;
+}
+
+.weather-box .temperature{
+    font-size: 40px;
+    font-weight: 600;
+    position: relative;
+}
+
+.weather-box .temperature sup{
+    font-size: 20px;
+    position: absolute;
+    font-weight: 600;
+}
+
+.weather-box .description{
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.weather-details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.humidity, .wind{
+    display: flex;
+    align-items: center;
+}
+
+.humidity{
+    margin-left: 10px;
+}
+.wind{
+    margin-right: 10px;
+}
+.weather-details i{
+    font-size: 36px;
+}
+.weather-details .text{
+    margin-left: 10px;
+    font-size: 16px;
+}
+.text span{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.not-found{
+    margin-top: 20px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.not-found img{
+    width: 80%;
+}
+
+.not-found p{
+    font-size: 20px;
+    font-weight: 200;
+    margin-block-end: 15px;
+}
